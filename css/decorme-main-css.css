@@ -5,6 +5,8 @@
 /* Colors */
 
 :root {
+    --bs-title-text: #161322;
+    --bs-main-text: #161322;
     --bs-gray: #dedede;
     --bs-gray-light: #f7f7f7;
     --bs-primary: #fe0000;
@@ -4492,8 +4494,12 @@ nav.woocommerce-pagination ul,
 
 /* Make CSS Elmir */
 
+.advantages-container p {
+    padding: 0;
+    margin: 0;
+}
+
 .advantages-container{
-    /* background-image: url(/images/advantages-fon.jpg); */
     background-size: cover;
     background-clip: padding-box;
     position: relative;
@@ -4514,7 +4520,8 @@ nav.woocommerce-pagination ul,
 
   .advantages-container > img {
     position: absolute;
-    padding: 50px;
+    padding: 100px;
+    padding-top: 350px;
   }
   
   .advantages-card-wrapper { grid-area: advantages-card-wrapper; }
@@ -4522,17 +4529,42 @@ nav.woocommerce-pagination ul,
   .form-wrapper { grid-area: form-wrapper; }
 
   .glass-wrapper{
-    backdrop-filter: blur(15px);
+    backdrop-filter: blur(6px);
     border-radius: 20px;
     padding: 46px 50px;
     box-sizing: border-box;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    background: linear-gradient(105.91deg, rgba(255, 255, 255, 0.2) 5.12%, rgba(255, 255, 255, 0.075) 87.57%);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    background: linear-gradient(105.91deg, #E3E3E3 5.12%, #ffffff66 87.57%);
   }
 
   .advantages-card-wrapper {
     padding: 50px;
     display: flex;
     flex-direction: column;
+    gap: 37px;
   }
   
+
+  .advantages-container .advantages-card-wrapper li{
+    display: flex;
+    align-items: center;
+
+  }
+
+  .advantages .title-advantages {
+    font-size: 30px;
+    font-weight: bold;
+    
+  }
+
+  .advantages .text {
+    font-size: 18px;
+    font-weight:normal;
+    line-height:1.2;
+  }
+
+  .advantages-container .advantages i {
+    font-size: 56px;
+    margin-right: 37px;
+  }
+
