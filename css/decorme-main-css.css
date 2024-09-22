@@ -4471,7 +4471,6 @@ nav.woocommerce-pagination ul,
     transition-delay: 0.3s;
 }
 
-
 .post-items.sticky:before {
     content: '*';
     position: absolute;
@@ -4487,3 +4486,4 @@ nav.woocommerce-pagination ul,
     height: 40px;
     width: 40px;
 }
+/*Илья делает стайл жесткий  */
