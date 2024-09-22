@@ -2275,12 +2275,21 @@ input[type="reset"]:focus {
     z-index: 0;
 }
 
+
 .home-slider,
 .home-slider .owl-item img {
     width: 100%;
-    height: 100%;
     height: 100vh;
+
 }
+@media screen and (min-width: 375px) and (max-width: 912px){
+    .home-slider,
+    .home-slider .owl-item img {
+        height: 100%;
+      
+}
+}
+
 
 .main-table {
     overflow: hidden;
