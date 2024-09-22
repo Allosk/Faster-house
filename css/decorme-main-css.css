@@ -4505,66 +4505,130 @@ nav.woocommerce-pagination ul,
     position: relative;
 }
 
-.advantages-container {  display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "advantages-card-wrapper advantages-card-wrapper . . ."
-      "advantages-card-wrapper advantages-card-wrapper . . ."
-      "advantages-card-wrapper advantages-card-wrapper . . ."
-      ". . . . ."
-      ". . form-wrapper form-wrapper form-wrapper";
-  }
+.advantages-container {
+    display: grid;
+}
 
-  .advantages-container > img {
-    position: absolute;
-    padding: 100px;
-    padding-top: 350px;
-  }
-  
-  .advantages-card-wrapper { grid-area: advantages-card-wrapper; }
-  
-  .form-wrapper { grid-area: form-wrapper; }
+.advantages-card-wrapper { grid-area: advantages-card-wrapper; }
+      
+.form-wrapper { grid-area: form-wrapper; }
 
-  .glass-wrapper{
+.glass-wrapper{
     backdrop-filter: blur(6px);
     border-radius: 20px;
-    padding: 46px 50px;
+    /* padding: 46px 50px; */
     box-sizing: border-box;
     border: 1px solid rgba(0, 0, 0, 0.2);
     background: linear-gradient(105.91deg, #E3E3E3 5.12%, #ffffff66 87.57%);
   }
 
-  .advantages-card-wrapper {
+.advantages-container .advantages-card-wrapper li{
+    display: flex;
+    align-items: center;
+  }
+
+
+
+
+.advantages-container {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "advantages-card-wrapper advantages-card-wrapper . . ."
+        "advantages-card-wrapper advantages-card-wrapper . . ."
+        "advantages-card-wrapper advantages-card-wrapper . . ."
+        ". . form-wrapper form-wrapper form-wrapper";
+    }
+
+    .advantages-container > img {
+    position: absolute;
+    padding: 100px;
+    padding-top: 125px;
+    }
+        
+    .advantages-card-wrapper {
     padding: 50px;
     display: flex;
     flex-direction: column;
     gap: 37px;
-  }
-  
-
-  .advantages-container .advantages-card-wrapper li{
-    display: flex;
-    align-items: center;
-
-  }
-
-  .advantages .title-advantages {
+    }
+            
+    .advantages .title-advantages {
     font-size: 30px;
     font-weight: bold;
     
-  }
+    }
 
-  .advantages .text {
+    .advantages .text {
     font-size: 18px;
     font-weight:normal;
     line-height:1.2;
-  }
+    }
 
-  .advantages-container .advantages i {
+    .advantages-container .advantages i {
     font-size: 56px;
     margin-right: 37px;
-  }
+    }
+
+    .advantages-container .form-wrapper {
+        padding: 30px;
+    }
+
+    .advantages-container .form-wrapper .form-title {
+        font-size: 36px;
+        font-weight: bold;
+    }
+
+
+@media (max-width: 768px) {
+    .advantages-container {  
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto auto;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "advantages-card-wrapper advantages-card-wrapper advantages-card-wrapper advantages-card-wrapper ."
+            "advantages-card-wrapper advantages-card-wrapper advantages-card-wrapper advantages-card-wrapper ."
+            "advantages-card-wrapper advantages-card-wrapper advantages-card-wrapper advantages-card-wrapper ."
+            "form-wrapper form-wrapper form-wrapper form-wrapper form-wrapper";
+    }
+    
+    .advantages-container > img {
+        position: absolute;
+        padding: 20px;
+        padding-top: 70px;
+    }
+    
+    .advantages-container > img {
+        /* height: 70%; */
+        object-fit: cover;
+    }
+        
+    .advantages-card-wrapper {
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+            
+    .advantages .title-advantages {
+        font-size:18px;
+        font-weight: bold;
+    
+    }
+    
+    .advantages .text {
+        font-size: 12px;
+        font-weight:normal;
+        line-height:1.2;
+    }
+    
+    .advantages-container .advantages i {
+        font-size: 30px;
+        margin-right: 15px;
+    }
+}
 
