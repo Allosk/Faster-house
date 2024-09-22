@@ -4486,4 +4486,53 @@ nav.woocommerce-pagination ul,
     height: 40px;
     width: 40px;
 }
-/*Илья делает стайл жесткий  */
+
+/* Илья делает стайл жесткий  */
+
+
+/* Make CSS Elmir */
+
+.advantages-container{
+    /* background-image: url(/images/advantages-fon.jpg); */
+    background-size: cover;
+    background-clip: padding-box;
+    position: relative;
+}
+
+.advantages-container {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "advantages-card-wrapper advantages-card-wrapper . . ."
+      "advantages-card-wrapper advantages-card-wrapper . . ."
+      "advantages-card-wrapper advantages-card-wrapper . . ."
+      ". . . . ."
+      ". . form-wrapper form-wrapper form-wrapper";
+  }
+
+  .advantages-container > img {
+    position: absolute;
+    padding: 50px;
+  }
+  
+  .advantages-card-wrapper { grid-area: advantages-card-wrapper; }
+  
+  .form-wrapper { grid-area: form-wrapper; }
+
+  .glass-wrapper{
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    padding: 46px 50px;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: linear-gradient(105.91deg, rgba(255, 255, 255, 0.2) 5.12%, rgba(255, 255, 255, 0.075) 87.57%);
+  }
+
+  .advantages-card-wrapper {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+  }
+  
