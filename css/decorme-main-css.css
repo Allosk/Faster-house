@@ -2736,7 +2736,7 @@ input[type="reset"]:focus {
     position: relative;
     opacity: 0.20;
     margin-bottom: 0;
-    line-height: 1;
+    line-height: 0.8;
     transform: translateY(2.8rem);
     font-weight: 900;
     font-size: 6.25rem;
@@ -4557,14 +4557,15 @@ nav.woocommerce-pagination ul,
     .advantages-container > img {
     position: absolute;
     padding: 100px;
-    padding-top: 80px;
+    height: 100vh;
+    transform: translate(11%, -6%);
     }
         
     .advantages-card-wrapper {
-    padding: 50px;
+    padding: 30px;
     display: flex;
     flex-direction: column;
-    gap: 37px;
+    gap: 30px;
     }
             
     .advantages .title-advantages {
@@ -4591,6 +4592,7 @@ nav.woocommerce-pagination ul,
     .advantages-container .form-wrapper .form-title {
         font-size: 36px;
         font-weight: bold;
+        margin-bottom:22px ;
     }
 
     .advantages-container .form-wrapper input{
@@ -4622,13 +4624,18 @@ nav.woocommerce-pagination ul,
     
     .advantages-container > img {
         position: absolute;
-        padding: 20px;
+        padding: 50px;
         padding-top: 70px;
     }
     
     .advantages-container > img {
         /* height: 70%; */
         object-fit: cover;
+    }
+
+    .advantages-container > img {
+        height: 74vh;
+        transform: translate(2%, -1%);
     }
         
     .advantages-card-wrapper {
@@ -4648,6 +4655,10 @@ nav.woocommerce-pagination ul,
         font-size: 12px;
         font-weight:normal;
         line-height:1.2;
+    }
+
+    .advantages-container .form-wrapper .form-title {
+        padding-bottom: 0px;
     }
     
     .advantages-container .advantages i {
@@ -4681,5 +4692,9 @@ nav.woocommerce-pagination ul,
     .btn-sm-no-line{
         line-height: 1!important;
     }
+}
+
+.main-slider .btn-primary:hover{
+    color: var(--bs-primary)!important;
 }
 
