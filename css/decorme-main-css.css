@@ -3034,14 +3034,28 @@ input[type="reset"]:focus {
 /*===== // =====*/
 
 .cta-section.home-cta {
-    background-color: var(--bs-secondarytwo);
+    
+}
+
+.cta-section{
+    position: relative;
+    background: url(/images/Дом\ во\ всю\ ширину.png) 0px 0px no-repeat;;
+    background-size: cover;
+}
+.cta-section:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:rgba(0, 0, 0, .5);
 }
 
 .cta-section.home-cta .cta-wrapper {
-    padding: 60px 52px;
-    background: url("../images/C84rjx4W46pe.png") no-repeat center center / cover, linear-gradient(180deg, rgba(22, 19, 34, 0) 9.22%, rgba(106, 111, 125, 0.5) 104.78%);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 15px;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -3049,11 +3063,17 @@ input[type="reset"]:focus {
 }
 
 .cta-section.home-cta .cta-wrapper .cta-content {
-    margin-right: 30px;
+    display: flex;
+    justify-content: space-between;
     flex: auto;
-    max-width: 718px;
-}
+    width: 100%;
+    color: #ffffff;
 
+}
+.cta-content span{
+    color: #FFBA00;
+    font-size: 45px;
+}
 .cta-section.home-cta .cta-wrapper .cta-btn-wrap {
     flex-shrink: 0;
 }
@@ -4502,7 +4522,60 @@ nav.woocommerce-pagination ul,
 }
 
 /* Илья делает стайл жесткий  */
+/* Стили для раздела типы домов */
+.container-item {
+    position: relative;
+    width: 100%;
+}
+  
+.container-item img {
+    width: 100%;
+    height: 100%;
+}
+  
+.container-item .container-item-btn {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+  
+.container-item-btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: clamp(1.5rem, 2.8vw, 44px);
+    color: #ffffff;
+    z-index: 1;
+  }
+  .btn-sm-no-line-height{
+    line-height: 1.2 !important;
+  }
+  .opacity img{
+    position: relative;
+    opacity: 0.5;
+    z-index: 1;
+   
+  }
+  .opacity{
+    height: 100%;
+    background: #000;
+  }
+/* Стили для раздела типы домов */
+/* Стили для раздела статистики */
+.container-statistics{
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 270px;
+}
+.st-py-default-copy {
+    padding: 0;
+}
 
+/* Стили для раздела широкая статистики */
 
 /* Make CSS Elmir */
 
