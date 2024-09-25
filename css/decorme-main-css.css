@@ -3067,7 +3067,6 @@ input[type="reset"]:focus {
     display: flex;
     justify-content: space-between;
     flex: auto;
-    flex-wrap: wrap;
     width: 100%;
     color: #ffffff;
 
