@@ -902,7 +902,7 @@ span.tgl-lbl {
 
 .menu-collapsed:hover div,
 .menu-collapsed:focus div {
-    background-color: var(--bs-primary);
+    background-color: white;
 }
 
 .hamburger-menu div {
