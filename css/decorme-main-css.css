@@ -3032,11 +3032,6 @@ input[type="reset"]:focus {
 }
 
 /*===== // =====*/
-
-.cta-section.home-cta {
-    
-}
-
 .cta-section{
     position: relative;
     background: url(/images/Дом\ во\ всю\ ширину.png) 0px 0px no-repeat;;
@@ -4561,6 +4556,7 @@ nav.woocommerce-pagination ul,
     background: #000;
   }
 /* Стили для раздела типы домов */
+
 /* Стили для раздела статистики */
 .container-statistics{
     display: flex;
@@ -4597,7 +4593,44 @@ nav.woocommerce-pagination ul,
     height: 90px;
     border-radius: 8px;
 }
-/* Стили для раздела широкая статистики */
+/* Стили для раздела широкая статистика */
+
+/* Стили для раздела как мы работаем */
+.container-work{
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+}
+.container-work-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.container-work-next{
+    color: #FFBA00;
+    font-size: 50px;
+}
+.container-work-icons{
+    font-size: 80px;
+}
+.container-work-section{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+}
+.container-work-icons-text{
+    font-size: 32px;
+    font-weight: 700;
+}
+.container-work-icons-text-down{
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+}
+/* Стили для раздела как мы работаем */
 
 /* Make CSS Elmir */
 
