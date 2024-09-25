@@ -83,7 +83,30 @@
               });
           });
         }
+
+        // Catalog Slider ( .catalog-slider )
 		
+        $(document).ready(function(){
+            $(".catalog-slider").owlCarousel({
+                loop:true,
+                margin:10,
+                nav:true,
+                responsive:{
+                    0:{
+                        items:1
+                    },
+                    600:{
+                        items:1
+                    },
+                    767:{
+                        items: 2
+                    },                    
+                    1000:{
+                        items:3
+                    }
+                }
+            });
+          });
 
         // Social Effects
         var ping = new Audio("");
