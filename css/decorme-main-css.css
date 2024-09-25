@@ -4793,3 +4793,49 @@ nav.woocommerce-pagination ul,
     color: var(--bs-primary)!important;
 }
 
+/* слайдел каталога */
+
+.owl-nav button.owl-next {
+    position: absolute;
+    font-size: 20px!important;
+    top: 37%;
+    transform: translate(0, -10%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50px!important;
+    border: 2px solid var(--bs-secondarytwo)!important;
+    line-height: 50px;
+    text-align: center;
+    background: white!important;
+    color: var(--bs-secondarytwo)!important;
+    transition: 0.65s;
+    right: -18px;
+}
+
+.owl-nav button.owl-prev{
+    position: absolute;
+    font-size: 20px!important;
+    top: 37%;
+    transform: translate(0, -10%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50px!important;
+    border: 2px solid var(--bs-secondarytwo)!important;
+    line-height: 50px;
+    text-align: center;
+    background: white!important;
+    color: var(--bs-secondarytwo)!important;
+    transition: 0.65s;
+    left: -18px;
+}
+
+
+@media (max-width: 576px){
+    .owl-nav button.owl-next {
+        display:none!important;
+    }
+    
+    .owl-nav button.owl-prev{
+        display:none!important;
+    }
+}
