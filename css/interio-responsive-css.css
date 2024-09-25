@@ -479,5 +479,16 @@
         font-size: 12px;
     }
 }
+@media (max-width: 1200px){
+	.cta-content{
+		flex-direction: column;
+		gap: 15px;
+	}
+	.container-statistics{
+		height: 520px;
+	}
+
+}
+
 
 /* @media Responsive End */

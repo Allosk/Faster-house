@@ -3041,6 +3041,7 @@ input[type="reset"]:focus {
     position: relative;
     background: url(/images/Дом\ во\ всю\ ширину.png) 0px 0px no-repeat;;
     background-size: cover;
+    background-position:50%;
 }
 .cta-section:before {
     content: '';
@@ -3070,10 +3071,7 @@ input[type="reset"]:focus {
     color: #ffffff;
 
 }
-.cta-content span{
-    color: #FFBA00;
-    font-size: 45px;
-}
+
 .cta-section.home-cta .cta-wrapper .cta-btn-wrap {
     flex-shrink: 0;
 }
@@ -4574,7 +4572,31 @@ nav.woocommerce-pagination ul,
 .st-py-default-copy {
     padding: 0;
 }
+.cta-content-stat{
+    display: flex;
+    align-items: center;
+ 
+}
+.cta-content-stat-amount{
+    z-index: 2;
+    font-size: 45px;
+    font-weight: bold;
+}
+.cta-content-stat-amount-text{
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 23px;
+    margin-left: 15px;
+}
+.cta-content-stat-card{
+    position: relative;
+    left: 48px;
 
+    border: #FFBA00 solid;
+    width: 56px;
+    height: 90px;
+    border-radius: 8px;
+}
 /* Стили для раздела широкая статистики */
 
 /* Make CSS Elmir */
