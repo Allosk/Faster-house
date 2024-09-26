@@ -4633,7 +4633,11 @@ nav.woocommerce-pagination ul,
 
 /* Стили для раздела как мы работаем */
 
-/* Make CSS Elmir */
+/*
+*
+*  CSS Elmir 
+* 
+*/
 
 .advantages-container p {
     padding: 0;
@@ -4668,9 +4672,6 @@ nav.woocommerce-pagination ul,
     align-items: center;
   }
 
-
-
-
 .advantages-container {  display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: auto auto auto auto;
@@ -4685,9 +4686,9 @@ nav.woocommerce-pagination ul,
 
     .advantages-container > img {
     position: absolute;
-    padding: 100px;
-    height: 100vh;
-    transform: translate(11%, -6%);
+    padding: 100px 0;
+    height: 930px;
+    transform: translate(11%, -3%);
     }
         
     .advantages-card-wrapper {
@@ -4704,13 +4705,13 @@ nav.woocommerce-pagination ul,
     }
 
     .advantages .text {
-    font-size: 18px;
+    font-size: clamp(0.4rem, 2vw, 1.13rem);
     font-weight:normal;
     line-height:1.2;
     }
 
     .advantages-container .advantages i {
-    font-size: 56px;
+    font-size: clamp(1.9rem, 5vw, 3.5rem);
     margin-right: 37px;
     }
 
@@ -4719,7 +4720,7 @@ nav.woocommerce-pagination ul,
     }
 
     .advantages-container .form-wrapper .form-title {
-        font-size: 36px;
+        font-size: clamp(1.2rem, 2vw, 2rem);
         font-weight: bold;
         margin-bottom:22px ;
     }
@@ -4736,8 +4737,121 @@ nav.woocommerce-pagination ul,
         font-weight:normal;
     }
 
+@media (max-width: 1200px) {
+    .advantages-container {  
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto auto;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "advantages-card-wrapper advantages-card-wrapper advantages-card-wrapper . ."
+            "advantages-card-wrapper advantages-card-wrapper advantages-card-wrapper . ."
+            "advantages-card-wrapper advantages-card-wrapper advantages-card-wrapper . ."
+            "form-wrapper form-wrapper form-wrapper form-wrapper form-wrapper";
+    }
+    
+    .advantages-container > img {
+        position: absolute;
+    }
+    
+    .advantages-container > img {
+        /* height: 70%; */
+        object-fit: cover;
+    }
+
+    .advantages-container > img {
+        height: 810px;
+        transform: translate(20%, -4%);
+    }
+        
+    .advantages-card-wrapper {
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .advantages-container .form-wrapper .form-title {
+        padding-bottom: 0px;
+    }
+    
+    .advantages-container .advantages i {
+        margin-right: 15px;
+    }
+
+    .advantages-container .form-wrapper {
+        padding: 15px;
+    }
+
+    .advantages-container .form-wrapper .form-title {
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 1.2;
+        padding-bottom: 10px;
+    }
+
+    .advantages-container .form-wrapper input{
+        border: 1px solid #161322;
+        border-radius: 10px;
+    }
+
+    .advantages-container .form-wrapper button{
+        border: 1px solid #161322;
+        background-color: var(--bs-secondarytwo)!important;
+        border-radius: 10px;
+        font-weight:normal;
+    }
+
+    .btn-sm-no-line{
+        line-height: 1!important;
+    }
+}
+
+@media (max-width: 1000px) {
+    .advantages-container > img {
+        width: 538px;
+        height: 790px;
+        transform: translate(15%, -3%);
+    }
+}
+
+@media (max-width: 767px) {
+    .advantages-container > img {
+        height: 600px;
+        width: 396px;
+        transform: translate(22%, 9%);
+    }
+}
 
 @media (max-width: 768px) {
+    .advantages-container {  
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto auto;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "advantages-card-wrapper advantages-card-wrapper advantages-card-wrapper advantages-card-wrapper ."
+            "advantages-card-wrapper advantages-card-wrapper advantages-card-wrapper advantages-card-wrapper ."
+            "advantages-card-wrapper advantages-card-wrapper advantages-card-wrapper advantages-card-wrapper ."
+            "form-wrapper form-wrapper form-wrapper form-wrapper form-wrapper";
+    }
+
+    .advantages-container > img {
+        height: 54vh;
+        width: 58vw;
+        transform: translate(34%, 12%);
+    }
+
+    .advantages-container > img {
+        position: absolute;
+        padding: 0px;
+        padding-top: 0px;
+    }
+}
+
+@media (max-width: 576px) {
     .advantages-container {  
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -4753,8 +4867,8 @@ nav.woocommerce-pagination ul,
     
     .advantages-container > img {
         position: absolute;
-        padding: 50px;
-        padding-top: 70px;
+        padding: 0px;
+        padding-top: 0px;
     }
     
     .advantages-container > img {
@@ -4763,8 +4877,9 @@ nav.woocommerce-pagination ul,
     }
 
     .advantages-container > img {
-        height: 74vh;
-        transform: translate(2%, -1%);
+        height: 60vh;
+        width: 79vw;
+        transform: translate(13%, 5%);
     }
         
     .advantages-card-wrapper {
@@ -4791,7 +4906,6 @@ nav.woocommerce-pagination ul,
     }
     
     .advantages-container .advantages i {
-        font-size: 30px;
         margin-right: 15px;
     }
 
@@ -4872,4 +4986,8 @@ nav.woocommerce-pagination ul,
     .owl-nav button.owl-prev{
         display:none!important;
     }
+}
+
+.owl-dots button.owl-dot {
+    background-color: var(--bs-secondary);
 }
