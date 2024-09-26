@@ -4600,12 +4600,12 @@ nav.woocommerce-pagination ul,
     display: flex;
     flex-direction: column;
     gap: 150px;
+
 }
 .container-work-row{
     display: flex;
     justify-content: space-between;
-    align-items: center;
-
+    align-items: baseline;
 }
 .container-work-next{
     color: #FFBA00;
@@ -4630,6 +4630,7 @@ nav.woocommerce-pagination ul,
     font-weight: 300;
     text-align: center;
 }
+
 /* Стили для раздела как мы работаем */
 
 /* Make CSS Elmir */
