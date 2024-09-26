@@ -479,6 +479,7 @@
         font-size: 12px;
     }
 }
+
 @media (max-width: 1200px){
 	.cta-content{
 		flex-direction: column;
@@ -488,6 +489,19 @@
 		height: 520px;
 	}
 
+}
+@media (max-width: 1200px){
+	.container-work-row {
+		flex-direction: column;	
+		align-items: center;
+		gap: 50px;
+	}
+	.container-work-next{
+		transform: rotate(90deg);
+	}
+	.container-work-icons-text{
+		word-spacing:-2px;
+	}
 }
 
 
