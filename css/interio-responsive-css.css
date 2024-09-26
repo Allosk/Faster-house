@@ -503,6 +503,14 @@
 		word-spacing:-2px;
 	}
 }
+@media (max-width: 1200px){
+	.container-work-present{
+		flex-direction: column-reverse;
+	}
+	.container-work-present-content{
+		gap:50px;
+	}
+}
 
 
 /* @media Responsive End */

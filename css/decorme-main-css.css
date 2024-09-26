@@ -4630,7 +4630,36 @@ nav.woocommerce-pagination ul,
     font-weight: 300;
     text-align: center;
 }
+.container-work-present{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 50px;
+}
 
+.container-work-present-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.container-work-present-content-heading{
+    font-size: 42px;
+    font-weight: 800;
+}
+.container-work-present-content-text{
+    font-size: 28px;
+    font-weight: 500;
+}
+.container-work-present-content-mark{
+    font-size: 16px;
+    font-weight: 500;
+}
+.btn-present{
+    padding: 25px 40px;
+    font-size: 24px;
+    color: #fff;
+}
 /* Стили для раздела как мы работаем */
 
 /*
