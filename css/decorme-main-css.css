@@ -5020,3 +5020,9 @@ nav.woocommerce-pagination ul,
 .owl-dots button.owl-dot {
     background-color: var(--bs-secondary);
 }
+
+/* font-size */
+
+.fs-20 {
+    font-size: 20px!important;
+}
