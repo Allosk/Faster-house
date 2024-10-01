@@ -4714,6 +4714,8 @@ nav.woocommerce-pagination ul,
 * 
 */
 
+
+/* Начало Раздел Преимущества */
 .advantages-container p {
     padding: 0;
     margin: 0;
@@ -5015,8 +5017,45 @@ nav.woocommerce-pagination ul,
 .main-slider .btn-primary:hover{
     color: var(--bs-primary)!important;
 }
+/* Конец раздела Преимущества */
 
-/* слайдел каталога */
+/* Начало Форма обратной связи */
+
+.feedback-form .form-wrapper {
+    padding: 30px 0px;
+}
+
+.feedback-form .form-wrapper .form-title {
+    font-size: clamp(1.2rem, 2vw, 2rem);
+    font-weight: bold;
+    margin-bottom:22px ;
+}
+
+.feedback-form .form-wrapper input{
+    border: 1px solid #161322;
+    border-radius: 10px;
+}
+
+.feedback-form .form-wrapper button{
+    border: 1px solid #161322;
+    background-color: var(--bs-secondarytwo)!important;
+    border-radius: 10px;
+    font-weight:normal;
+}
+
+.feedback-form .form-title{
+    font-size: 32px;
+    font-weight: bold;
+    line-height: normal;
+}
+
+.feedback-form .personal-data-text{
+    font-size: 12px;
+    font-weight: lighter;
+}
+/* Конец Форма обратной связи */
+
+/* Слайдел Каталога */
 
 .owl-nav button.owl-next {
     position: absolute;
@@ -5072,3 +5111,8 @@ nav.woocommerce-pagination ul,
 .fs-20 {
     font-size: 20px!important;
 }
+
+.fs-32{
+    font-size: 32px!important;
+}
+
