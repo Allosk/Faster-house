@@ -4670,9 +4670,7 @@ nav.woocommerce-pagination ul,
     gap: 200px;
     width: 100%;
 }
-.container-faq-child{
-    
-}
+
 .container-faq-child input{
     position: absolute;
     opacity: 0;
