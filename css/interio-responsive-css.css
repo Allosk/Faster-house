@@ -512,5 +512,11 @@
 	}
 }
 
+@media (max-width: 1200px){
+	.container-work-present-content-heading{
+		line-height: normal;
+	}
+}
+
 
 /* @media Responsive End */
