@@ -144,20 +144,6 @@
             });
         });
 
-        
-
-        $(document).ready(function() {
-            // Плавный скролл к якорю
-            $('.smooth-scroll').on('click', function(e) {
-                e.preventDefault();
-        
-                var target = $(this).attr('href');
-                $('html, body').animate({
-                    scrollTop: $(target).offset().top
-                }, 1000);
-            });
-        });
-
 
         // Social Effects
         var ping = new Audio("");
