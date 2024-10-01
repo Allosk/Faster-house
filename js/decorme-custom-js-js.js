@@ -83,7 +83,81 @@
               });
           });
         }
+
+        // Catalog Slider ( .catalog-slider )
 		
+        $(document).ready(function(){
+            $(".catalog-slider").owlCarousel({
+                loop:true,
+                margin:10,
+                nav: true,
+                navText: ['<i class="fa-solid fa-chevron-left"></i>', '<i class="fa-solid fa-chevron-right"></i>'],
+                responsive:{
+                    0:{
+                        items:1
+                    },
+                    600:{
+                        items:1
+                    },
+                    767:{
+                        items: 2
+                    },                    
+                    1000:{
+                        items:3
+                    }
+                }
+            });
+          });
+
+        // Сounter Number
+
+        //each, prop, animate, math, text
+
+        //.animate( properties [, duration ] [, easing ] [, callback ] )
+        //"swing" - moves slower at the beginning/end, but faster in the middle
+        //"linear" - moves in a constant speed
+        //step : A function to be called after each step of the animation.  step takes: now and fx.
+        //$(selector).prop(name,value)
+
+        // Counter Number
+        $(window).scroll(function() {
+            $('.count').each(function() {
+                var elementTop = $(this).offset().top;
+                var elementBottom = elementTop + $(this).outerHeight();
+                var viewportTop = $(window).scrollTop();
+                var viewportBottom = viewportTop + $(window).height();
+
+                if (elementBottom > viewportTop && elementTop < viewportBottom) {
+                    if (!$(this).data('counted')) {
+                        $(this).prop('counter', 0).animate({
+                            counter: $(this).text()
+                        }, {
+                            duration: 3000,
+                            easing: 'swing',
+                            step: function(now) {
+                                $(this).text(Math.ceil(now));
+                            }
+                        });
+                        $(this).data('counted', true);
+                    }
+                }
+            });
+        });
+
+        
+
+        $(document).ready(function() {
+            // Плавный скролл к якорю
+            $('.smooth-scroll').on('click', function(e) {
+                e.preventDefault();
+        
+                var target = $(this).attr('href');
+                $('html, body').animate({
+                    scrollTop: $(target).offset().top
+                }, 1000);
+            });
+        });
+
 
         // Social Effects
         var ping = new Audio("");

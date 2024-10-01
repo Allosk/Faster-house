@@ -486,8 +486,8 @@ ul.main-menu li {
 .main-footer .widget_nav_menu .sub-menu li a,
 .main-header .widget_nav_menu .sub-menu li a,
 .main-navbar .dropdown-menu li a {
-    border-bottom: 1px solid var(--bs-gray-light);
-    color: var(--bs-secondary);
+    border-bottom: 1px solid var(--bs-secondarytwo);
+    color: var(--bs-secondarytwo);
     font-weight: 400;
     line-height: 24px;
     padding: 0.5rem 1.125rem 0.5rem 1.125rem;
@@ -770,7 +770,7 @@ ul.footer-menu li {
 .main-mobile-menu ul.main-menu > li a {
     width: 100%;
     padding: 0;
-    color: var(--bs-secondary);
+    color: var(--bs-secondarytwo);
     padding-left: 15px;
 }
 
@@ -902,7 +902,7 @@ span.tgl-lbl {
 
 .menu-collapsed:hover div,
 .menu-collapsed:focus div {
-    background-color: var(--bs-primary);
+    background-color: white;
 }
 
 .hamburger-menu div {
