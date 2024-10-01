@@ -119,24 +119,31 @@
         //step : A function to be called after each step of the animation.  step takes: now and fx.
         //$(selector).prop(name,value)
 
-        $('.count').each(function() {
+        // Counter Number
+        $(window).scroll(function() {
+            $('.count').each(function() {
+                var elementTop = $(this).offset().top;
+                var elementBottom = elementTop + $(this).outerHeight();
+                var viewportTop = $(window).scrollTop();
+                var viewportBottom = viewportTop + $(window).height();
 
-            $(this).prop('counter', 0).animate({
-        
-            counter: $(this).text()
-        
-            }, {
-        
-            duration: 3000,
-        
-            easing: 'swing',
-        
-            step: function(now) {
-        
-                $(this).text(Math.ceil(now));
-            }
+                if (elementBottom > viewportTop && elementTop < viewportBottom) {
+                    if (!$(this).data('counted')) {
+                        $(this).prop('counter', 0).animate({
+                            counter: $(this).text()
+                        }, {
+                            duration: 3000,
+                            easing: 'swing',
+                            step: function(now) {
+                                $(this).text(Math.ceil(now));
+                            }
+                        });
+                        $(this).data('counted', true);
+                    }
+                }
             });
         });
+
 
         // Social Effects
         var ping = new Audio("");
