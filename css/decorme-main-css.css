@@ -5077,3 +5077,61 @@ nav.woocommerce-pagination ul,
 }
 
 /* Конец Раздела Подвал */
+
+/* Начало Контакты */
+
+.contacts ul{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.contacts ul.contacts-list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contacts ul.social-list{
+    color: var(--bs-secondarytwo);
+    font-size: clamp(1rem, 5vw, 3rem);
+    display: flex;
+    gap: 32px;
+}
+
+.contact-form .form-wrapper {
+    padding: 30px 0px;
+}
+
+.contact-form .form-wrapper .form-title {
+    font-size: clamp(1.2rem, 2vw, 2rem);
+    font-weight: bold;
+    margin-bottom:22px ;
+}
+
+.contact-form .form-wrapper input{
+    border: 1px solid #161322;
+    border-radius: 10px;
+}
+
+.contact-form .form-wrapper button{
+    border: 1px solid #161322;
+    background-color: var(--bs-secondarytwo)!important;
+    border-radius: 10px;
+    font-weight:normal;
+}
+
+.contact-form .form-title{
+    font-size: 32px;
+    font-weight: bold;
+    line-height: normal;
+}
+
+.contact-form .personal-data-text{
+    font-size: 12px;
+    font-weight: lighter;
+}
+
+
+
+/* Конец Контакты */
