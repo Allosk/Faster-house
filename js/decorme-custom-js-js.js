@@ -144,8 +144,7 @@
             });
         });
 
-        
-
+        //Scroll menu
         $(document).ready(function() {
             // Плавный скролл к якорю
             $('.smooth-scroll').on('click', function(e) {
