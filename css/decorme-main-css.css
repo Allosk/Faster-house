@@ -4662,6 +4662,25 @@ nav.woocommerce-pagination ul,
 }
 /* Стили для раздела как мы работаем */
 
+/* Стили раздела FAQ */
+
+.faq-item{
+    border-radius: 20px !important; 
+    
+}
+/* .faq-color:enabled{
+    background-color: #000000 !important;
+    color: #ffffff !important;
+}
+.faq-color{
+    background-color: #ffffff !important;
+    color: #4e4e4e !important;
+} */
+
+/* Стили раздела FAQ */
+
+
+
 /*
 *
 *  CSS Elmir 
