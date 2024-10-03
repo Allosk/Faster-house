@@ -1448,37 +1448,56 @@ var woocommerce_params = {"ajax_url":"\/demo\/lite\/interio\/wp-admin\/admin-aja
             <div class="col-md-6 col-12">
               <ul class="contacts-list">
                 <li>
-                  <ul class="social-list">
+                  <ul class="social-list justify-content-center justify-content-md-start">
                     <li><a href="#"><i class="fa-brands fa-square-whatsapp"></i></a></li>
                     <li><a href="#"><i class="fa-brands fa-telegram"></i></a></li>
                     <li><a href="#"><i class="fa-brands fa-vk"></i></a></li>
                   </ul>
                 </li>
-                <li><i class="fa-solid fa-envelope"></i><a href="#" class="email">container@mail.com</a></li>
-                <li><i class="fa-solid fa-mobile-button"></i><a href="#">+7(999)123-45 67</a></li>
-                <li><i class="fa-solid fa-location-dot"></i><a href="#">Санкт-Петербург, Дворцовая площадь</a></li>
+                <li class="contact-item">
+                  <table>
+                    <tbody class="contact-table">
+                      <tr>
+                        <td><i class="fa-solid fa-envelope"></i></td>
+                        <td><a href="#" class="email">container@mail.com</a></td>
+                        
+                      </tr>
+                      <tr>
+                        <td><i class="fa-solid fa-mobile-button"></i></td>
+                        <td><a href="#">+7(999)123-45 67</a></td>
+                        
+                      </tr>
+                      <tr>
+                        <td><i class="fa-solid fa-location-dot"></i></td>
+                        <td><a href="#">Санкт-Петербург, Дворцовая площадь</a></td>
+                        
+                      </tr>
+                    </tbody>
+                  </table>
+                </li>
               </ul>
             </div>
-            <div class="contact-form col-md-6 col-12">
-              <div class="row align-items-baseline">
-                <div class="col-md-4 col-12">
+            <div class="container contact-form col-md-6 col-12 px-2">
+              <div class="row align-items-baseline flex-column">
+                <div class="col-12">
                   <span class="form-title">Получите бесплатную консультанцию</span>
                 </div>
-                <div class="form-wrapper col-md-8 col-12 py-md-4 py-3">
-                  <form class="container">
+                <div class="form-wrapper col-12 py-md-4 py-3">
+                  <form class="container px-2">
                     <div class="row g-md-4 g-2">
-                        <div class="col-md-4 col-12">
+                        <div class="col-12">
                             <input type="text" class="form-control" id="name" placeholder="Ваше имя">
                         </div>
-                        <div class="col-md-4 col-12">
+                        <div class="col-12">
                             <input type="phone" class="form-control" id="phone" placeholder="+7(999) 123-45 67">
                         </div>
-                        <div class="col-md-4 col-12 text-md-left text-right">
+                        <div class="col-12 text-md-left text-right">
                             <button type="button" class="w-100 h-100 btn btn-primary btn-sm-no-line">Консультация</button>
                         </div>
+                            
                     </div>
                 </form>
-                <p class="my-2 px-3 personal-data-text">Нажимая на кнопку, вы соглашаетесь с политикой конфиденциальности и на обработку персональных данных</p>
+                
                 </div>
               </div>
             </div>

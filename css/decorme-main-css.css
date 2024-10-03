@@ -5119,9 +5119,10 @@ nav.woocommerce-pagination ul,
     gap: 10px;
 }
 
-.contacts ul.social-list{
+.contacts ul.social-list, 
+.contact-item i{
     color: var(--bs-secondarytwo);
-    font-size: clamp(1rem, 5vw, 3rem);
+    font-size: 3rem;
     display: flex;
     gap: 32px;
 }
@@ -5159,6 +5160,37 @@ nav.woocommerce-pagination ul,
     font-weight: lighter;
 }
 
+.contacts-list .contact-item{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    justify-content: center;
+    justify-items: center;
+}
 
+.contact-table td:first-child {
+    margin: auto 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
 
+.contact-table td:nth-child(2) {
+    padding-left: 13px;
+}
+
+.contact-item table td {
+    padding-bottom: 21px;
+}
+
+.contact-table a{
+    font-size: 24px;
+    color: var(--bs-secondarytwo);
+    text-decoration: none;
+}
+
+@media (max-width: 767px){
+    .contact-item table{
+        width: 85%;
+    }
+}
 /* Конец Контакты */
