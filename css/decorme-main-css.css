@@ -4543,7 +4543,7 @@ nav.woocommerce-pagination ul,
     z-index: 1;
   }
   .btn-sm-no-line-height{
-    line-height: 2 !important;
+    line-height: 1.2 !important;
   }
   .opacity img{
     position: relative;
@@ -4656,7 +4656,7 @@ nav.woocommerce-pagination ul,
     font-weight: 500;
 }
 .btn-present{
-    padding: 11px 37px;
+    padding: 25px 40px;
     font-size: 24px;
     color: #fff;
 }
@@ -5188,6 +5188,20 @@ nav.woocommerce-pagination ul,
     text-decoration: none;
 }
 
+.social-list .fa-square-whatsapp:hover{
+    color: #5eb34e;
+    transition: all 0.3s ease-in-out;
+}
+
+.social-list .fa-telegram:hover{
+    color: #5eabdf;
+    transition: all 0.3s ease-in-out;
+}
+
+.social-list .fa-vk:hover{
+    color: #3a7afb;
+    transition: all 0.3s ease-in-out;
+}
 @media (max-width: 767px){
     .contact-item table{
         width: 85%;
