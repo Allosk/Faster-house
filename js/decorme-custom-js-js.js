@@ -14,7 +14,7 @@
         $('.scrollingUp').on('click', function () {
           $("html, body").animate({
             scrollTop: 0
-          }, 600);
+          }, 100);
           return false;
         });
 
@@ -153,7 +153,7 @@
                 var target = $(this).attr('href');
                 $('html, body').animate({
                     scrollTop: $(target).offset().top
-                }, 1000);
+                }, 100);
             });
         });
 

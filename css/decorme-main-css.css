@@ -5185,26 +5185,42 @@ nav.woocommerce-pagination ul,
 .contact-table a{
     font-size: 24px;
     color: var(--bs-secondarytwo);
-    text-decoration: none;
+    /* text-decoration: none; */
+}
+
+.social-list .fa-square-whatsapp{
+    transition: var(--bs-transition);
+}
+
+.social-list .fa-telegram{
+    transition: var(--bs-transition);
+}
+
+.social-list .fa-vk{
+    transition: var(--bs-transition);
 }
 
 .social-list .fa-square-whatsapp:hover{
     color: #5eb34e;
-    transition: all 0.3s ease-in-out;
+    transition: var(--bs-transition);
 }
 
 .social-list .fa-telegram:hover{
     color: #5eabdf;
-    transition: all 0.3s ease-in-out;
+    transition: var(--bs-transition);
 }
 
 .social-list .fa-vk:hover{
     color: #3a7afb;
-    transition: all 0.3s ease-in-out;
+    transition: var(--bs-transition);
 }
 @media (max-width: 767px){
     .contact-item table{
         width: 85%;
     }
+}
+
+.social-list a{
+    color: var(--bs-secondarytwo);
 }
 /* Конец Контакты */
