@@ -4543,7 +4543,7 @@ nav.woocommerce-pagination ul,
     z-index: 1;
   }
   .btn-sm-no-line-height{
-    line-height: 1.2 !important;
+    line-height: 2 !important;
   }
   .opacity img{
     position: relative;
