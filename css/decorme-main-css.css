@@ -4684,7 +4684,9 @@ nav.woocommerce-pagination ul,
 .faq-border:not(:first-of-type){
     border: 1px rgba(0, 0, 0, 0.125) solid;
 }
-
+.focus:focus{
+    z-index: 1;
+}
 /* Стили раздела FAQ */
 
 
